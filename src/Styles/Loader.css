@@ -1,0 +1,66 @@
+@media(max-width:1440px){
+    .Loader-Container{
+        max-width: 1440px;
+    }
+    .Loader-Container img{
+        width: 30vw;
+    }
+}
+@media(max-width:950px){
+    .Loader-Container{
+        max-width: 950px;
+    }
+    .Loader-Container img{
+        width: 40vw;
+    }
+}
+@media(max-width:860px){
+    .Loader-Container{
+        max-width: 860px;
+    }
+    .Loader-Container img{
+        width: 70vw;
+    }
+
+}
+@media(max-width:768px){
+.Loader-Container{
+    max-width: 768px;
+}
+.Loader-Container img{
+    width: 70vw;
+}
+}
+@media(max-width:425px){
+    .Loader-Container{
+        max-width: 425px;
+    }
+    .Loader-Container img{
+        width: 70vw;
+    }
+    .Loader-Container .Sparkle-div{
+        width:40rem;
+    }
+}
+@media (max-width:375px) {
+    .Loader-Container{
+        max-width: 375px;
+    }
+    .Loader-Container .Loader-Logo{
+        width: 70vw;
+    }
+    .Loader-Container .Sparkle-div{
+        width:40rem;
+    }
+}
+@media (max-width:320px){
+    .Loader-Container{
+        max-width: 320px;
+    }
+    .Loader-Container .Loader-Logo{
+        width: 70vw;
+    }
+    .Loader-Container .Sparkle-div{
+        width:39rem;
+    }
+}

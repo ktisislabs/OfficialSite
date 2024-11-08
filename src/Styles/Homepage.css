@@ -1,0 +1,205 @@
+@media(max-width:1440px){
+    .Hero-Section{
+        max-width: 1440px;
+     
+       
+    }
+    .Hero-text-1{
+    
+        font-size: 4rem;
+    }
+    .Hero-text-2{
+        font-size: 2rem;
+    }
+    .Hero-Section button {
+        background-color: white;
+        color: black;
+        font-size: small;
+        
+    }
+}
+
+@media(max-width:1024px){
+    .Hero-Section{
+        max-width: 1440px;
+    }
+    .Hero-text-1{
+    
+        font-size: 3rem;
+    }
+    .Hero-text-2{
+        font-size: 2rem;
+    }
+    .Hero-Section button {
+        background-color: white;
+        color: black;
+        font-size: small;
+        
+    }
+}
+@media(max-width:950px){
+    .Hero-Section{
+        max-width: 950px;
+    }
+    .Hero-text-1{
+    
+        font-size: 2.9rem;
+    }
+    .Hero-text-2{
+        font-size: 1.9rem;
+    }
+    .Hero-Section button {
+        background-color: white;
+        color: black;
+        font-size: smaller;
+        
+    }
+}
+@media(max-width:860px){
+    .Hero-Section{
+        max-width: 860px;
+    }
+    .Hero-text-1{
+    
+        font-size: 2.6rem;
+    }
+    .Hero-text-2{
+        font-size: 1.6rem;
+    }
+    .Hero-Section button {
+        background-color: white;
+        color: black;
+        font-size: smaller;
+        
+    }
+}
+@media(max-width:768px){
+    .Hero-Section{
+        max-width: 768px;
+    }
+    .Hero-text-1{
+    
+        font-size: 3rem;
+    }
+    .Hero-text-2{
+        font-size: 2rem;
+    }
+    .Hero-Section button {
+        background-color: white;
+        color: black;
+        font-size: 0.7rem;
+        
+    }
+}
+
+@media(max-width:425px){
+    .Hero-Section{
+        max-width: 425px;
+    }
+    .Hero-text-1{
+    width: 100vw;
+ 
+        font-size: 2.5rem;
+    }
+    .Hero-text-2{
+        font-size: 1.5rem;
+        width: 100vw;
+  
+    }
+    .Hero-Section button {
+        background-color: white;
+        color: black;
+        font-size: 0.7rem;
+        
+    }
+}
+
+@media(max-width:375px){
+    .Hero-Section{
+        max-width: 375px;
+    }
+    .Hero-text-1{
+        width: 100vw;
+        font-size: 2rem !important;
+    }
+    .Hero-text-2{
+        width: 100vw;
+        font-size: 1.5rem !important;
+    }
+    .Hero-Section button{
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width:320px){
+    .Hero-Section{
+        max-width: 320px;
+       
+    }
+    .Hero-text-1{
+        width: 100vw;
+      
+        font-size: 1.5rem !important;
+    }
+    .Hero-text-2{
+        width: 100vw;
+        font-size: 1rem;
+    }
+    .Hero-Section button {
+        font-size:0.5rem;
+    }
+}
+
+
+/* EdgeCases : 1236,428*/
+
+@media(max-width:1236px){
+    .Hero-Section{
+        max-width: 1236px;
+    }
+    .Hero-text-1{
+        width: 100vw;
+        font-size: 3rem;
+    }
+
+}
+
+
+@media(max-width:393px){
+    .Hero-Section{
+        max-width: 393px;
+    }
+    .Hero-text p{
+        
+        font-size: 2rem;
+    }
+}
+@media (max-width:428px){
+    .Hero-Section{
+        max-width: 428px;
+    }
+    .Hero-text-1{
+        width: 100vw;
+        font-size: 2.5rem;
+    }
+    .Hero-text-2{
+        width: 100vw;
+        font-size: 2rem;
+    }
+    
+}
+
+@media (max-width:390px) {
+    .Hero-Section{
+        max-width: 390px;
+    }
+    .Hero-text-1{
+        width: 100vw;
+        font-size: 2rem;
+    }
+    .Hero-text-2{
+        width: 100vw;
+        font-size: 1.5rem;
+    }
+    
+}

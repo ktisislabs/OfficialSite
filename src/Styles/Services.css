@@ -1,0 +1,52 @@
+
+.Services-container{
+    overflow: hidden;
+}
+
+@media (max-width:1440px){
+    .Services-Section{
+        max-width:1440px;
+        padding: 20px;
+    }
+}
+@media(max-width:912px){
+    .Services-Section{
+        max-width: 912px;
+        padding: 5px;
+        overflow: auto;
+    }
+    .Card-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 100px;
+    }
+}
+@media(max-width:860px){
+    .Services-Section{
+        max-width: 860px;
+        padding: 5px;
+        overflow: auto;
+    }
+    .Card-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 100px;
+    }
+}
+@media(max-width:768px){
+    .Services-Section{
+        max-width: 768px;
+        overflow: auto;
+    }
+    .Card-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+}

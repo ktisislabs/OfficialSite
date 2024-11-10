@@ -10,14 +10,7 @@ function About() {
     <>
  
       <div className="About-Container w-full h-screen bg-black overflow-hidden relative">
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          src={VideoBack}
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+        
         <Navbar />
 
         <div className="About-Section w-full h-full absolute flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 text-center space-y-8 bg-black bg-opacity-50">

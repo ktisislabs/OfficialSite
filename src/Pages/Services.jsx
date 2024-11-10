@@ -11,16 +11,8 @@ import '../Styles/Services.css' ;
 function Services() {
  
   return (
-    <div className="Services-container relative w-full h-screen overflow-hidden">
-      {/* Video background */}
-      <video
-        src={VideoBack}
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      ></video>
+    <div className="Services-container relative bg-black w-full h-screen overflow-hidden">
+      
             <Navbar />
       {/* Overlay content */}
       <div className="Services-Section absolute inset-0 bg-black bg-opacity-50">

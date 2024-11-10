@@ -14,14 +14,7 @@ export default function Contact() {
     <>
       <div className='relative w-full h-screen bg-black overflow-hidden'>
         {/* Background video */}
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          src={VideoBack}
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+        
 
         {/* Navbar component */}
         <Navbar />

@@ -104,7 +104,7 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className="Work-Container w-full h-screen bg-black overflow-hidden relative">
+    <div className="Work-Container  w-full h-screen bg-black overflow-hidden relative">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src={VideoBack}

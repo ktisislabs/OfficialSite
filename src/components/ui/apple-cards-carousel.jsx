@@ -88,8 +88,8 @@ import '../../Styles/Work.css'
   
             <div
               className={cn(
-                "Work-Card flex flex-row   justify-start gap-4 pl-4",
-                // remove max-w-4xl if you want the carousel to span the full width of its container
+                "Work-Card flex flex-row justify-start gap-4 pl-4",
+                
                 "max-w-7xl mx-auto"
               )}>
               {items.map((item, index) => (

@@ -7,7 +7,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
-import { IoCall } from "react-icons/io5";
+
 
 
 function Navbar() {
@@ -31,7 +31,6 @@ function Navbar() {
           <Link to='/About'>    <li className="Menu-Item">About</li> </Link>
           <Link to='/Services'> <li className="Menu-Item">Services</li> </Link>
            <Link to='/Work'> <li className="Menu-Item">Work</li></Link>
-          <Link to='/Updates'>  <li className="Menu-Item">Updates</li></Link>
          <Link to='/Contact'>   <li className="Menu-Item">Contact</li></Link>
           </ul>
 
@@ -68,7 +67,6 @@ function Navbar() {
         <Link to='/About'>  <li className="hover:text-gray-400 font-medium cursor-pointer">About.</li></Link>
        <Link to='/Services'> <li className="hover:text-gray-400 font-medium cursor-pointer">Services.</li></Link>  
         <Link to='/Work'><li className="hover:text-gray-400 font-medium cursor-pointer">Work.</li></Link>  
-         <Link to='/Updates'><li className="hover:text-gray-400 font-medium cursor-pointer">Updates.</li></Link> 
        <Link to='/Contact'> <li className="hover:text-gray-400 font-medium cursor-pointer">Contact.</li></Link>  
         </ul>
         <div className="Hamburger-div">

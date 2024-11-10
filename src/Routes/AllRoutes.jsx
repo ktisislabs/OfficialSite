@@ -5,7 +5,6 @@ import HomePage from '../Pages/HomePage';
 import About from '../Pages/About';
 import Services from '../Pages/Services';
 import Work from '../Pages/Work';
-import Updates from '../Pages/Updates';
 import Contact from '../Pages/Contact';
 
 function AllRoutes() {
@@ -17,7 +16,6 @@ function AllRoutes() {
   <Route path="/About" element={<About/>}></Route>
   <Route path="/Services" element={<Services/>}></Route>
   <Route path="/Work" element={<Work/>}></Route>
-  <Route path="/Updates" element={<Updates/>}></Route>
   <Route path="/Contact" element={<Contact/>}></Route>
  </Routes>
  </>

@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import '../Styles/Homepage.css';
 import Navbar from '../components/Navbar';
 import VideoBack from '../Assets/Background.mp4';
+import Smallabout from '../components/smallabout';
 
 function HomePage() {
 
 
   return (
     <>
-      <div className='Homepage-Container w-full h-screen bg-black overflow-hidden relative'>
+      <div className='Homepage-Container w-full h-screen bg-black overflow-auto relative'>
       <Navbar />
         <video
           className="absolute top-0 left-0 w-full h-full object-cover "
@@ -21,7 +22,7 @@ function HomePage() {
         
       
 
-        <div className='Hero-Section w-full h-full flex items-center justify-start relative p-8'> {/* Adjust padding as needed */}
+        <div className='Hero-Section w-full h-[80vh] flex items-center justify-start relative p-8'> {/* Adjust padding as needed */}
           <div className='Hero-text w-1/2 mb-16'> {/* Removed padding on the Hero-text div for left alignment */}
             {/* Applying white text with black shadow */}
             <p className={`Hero-text-1 text-white text-8xl font-semibold font-poppins drop-shadow-[0_0_5px_rgba(0,0,0,1)]`}>
@@ -37,6 +38,13 @@ function HomePage() {
 </a>
           </div>
         </div>
+
+              {/* section -1  */}
+              <Smallabout/>
+
+
+
+
       </div>
     </>
   );

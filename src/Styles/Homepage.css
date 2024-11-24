@@ -17,6 +17,7 @@
         font-size: small;
         
     }
+   
 }
 
 @media(max-width:1024px){
@@ -54,6 +55,12 @@
         font-size: smaller;
         
     }
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.5rem;
+    }
 }
 @media(max-width:860px){
     .Hero-Section{
@@ -72,6 +79,12 @@
         font-size: smaller;
         
     }
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.5rem;
+    }
 }
 @media(max-width:768px){
     .Hero-Section{
@@ -89,6 +102,12 @@
         color: black;
         font-size: 0.7rem;
         
+    }
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.5rem;
     }
 }
 
@@ -112,6 +131,12 @@
         font-size: 0.7rem;
         
     }
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.5rem;
+    }
 }
 
 @media(max-width:375px){
@@ -128,6 +153,12 @@
     }
     .Hero-Section button{
         font-size: 0.5rem;
+    }
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.2rem;
     }
 }
 
@@ -148,6 +179,12 @@
     .Hero-Section button {
         font-size:0.5rem;
     }
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -161,7 +198,12 @@
         width: 100vw;
         font-size: 3rem;
     }
-
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -172,6 +214,12 @@
     .Hero-text p{
         
         font-size: 2rem;
+    }
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.2rem;
     }
 }
 @media (max-width:428px){
@@ -185,6 +233,12 @@
     .Hero-text-2{
         width: 100vw;
         font-size: 2rem;
+    }
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.2rem;
     }
     
 }
@@ -200,6 +254,12 @@
     .Hero-text-2{
         width: 100vw;
         font-size: 1.5rem;
+    }
+    .smallaobut-header{
+        font-size: 2.3rem;
+    }
+    .smallabout-text{
+        font-size: 1.2rem;
     }
     
 }

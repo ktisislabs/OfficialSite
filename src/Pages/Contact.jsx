@@ -9,6 +9,7 @@ import { SiGmail } from "react-icons/si";
 import { IoCall } from "react-icons/io5";
 
 
+
 export default function Contact() {
   return (
     <>
@@ -43,6 +44,7 @@ export default function Contact() {
             </a>
           </div>
         </div>
+
       </div>
     </>
   );

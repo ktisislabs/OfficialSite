@@ -6,7 +6,7 @@ import Ephe from '../Assets/ephemeral.png'
 export const WorkData=[
     {
         id:1,
-        Name:"TheRaavya",
+        Name:"TheRaavya (v1)",
         Industry:"Home Decor and Furniture Brand.",
         image:Raavya,
         Service:"UI/UX Design",
@@ -15,7 +15,7 @@ export const WorkData=[
     },
     {
         id:2,
-        Name:"TheRaavya",
+        Name:"TheRaavya (v1)",
         Industry:"Home Decor and Furniture Brand.",
         image:Raavya,
         Service:"Web Development ",

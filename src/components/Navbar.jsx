@@ -47,7 +47,6 @@ function Navbar() {
             <a href='mailto:connect.ktisislabs@gmail.com' target='_blank' className="flex flex-col items-center hover:text-red-500 transition-all">
               <SiGmail className='w-6 h-6 sm:w-8 sm:h-8' />
             </a>
-           
           </div>
         </div>
       </div>

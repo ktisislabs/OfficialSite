@@ -11,7 +11,8 @@ export const WorkData=[
         image:Raavya,
         Service:"UI/UX Design",
         Description:"The Raavya Home Creator is a premium brand offering sustainable furniture and home decor.",
-        link:"/"
+        link:"/",
+        caseStudyId: 1, 
     },
     {
         id:2,
@@ -20,7 +21,8 @@ export const WorkData=[
         image:Raavya,
         Service:"Web Development ",
          Description:"The Raavya Home Creator is a premium brand offering sustainable furniture and home decor.",
-        link:"/"
+        link:"/",
+        caseStudyId: 1, // Reference to CaseStudyData
     },
     {
         id: 3,
@@ -29,7 +31,8 @@ export const WorkData=[
         Service: "UI/UX Design",
         image: pohui,
         Description: "A boutique pottery studio offering unique, handcrafted pottery pieces.",
-        link: "https://potsofhappiness-demo.vercel.app/"
+        link: "https://potsofhappiness-demo.vercel.app/",
+        caseStudyId: 2, // Reference to CaseStudyData
       },
     {
         id:4,
@@ -38,7 +41,8 @@ export const WorkData=[
         image:POH,
         Service:"UI/UX Design ",
          Description:"A boutique pottery studio offering unique, handcrafted pottery pieces.",
-        link:"/"
+        link:"/",
+        caseStudyId: 2, // Reference to CaseStudyData
     },
     {
         id:5,
@@ -47,7 +51,8 @@ export const WorkData=[
         image:Ephe,
         Service:"UI/UX Design ",
          Description:"Ephemeral Vidp is a cutting-edge design studio specializing in creating captivating visuals and innovative designs that leave a lasting impression.",
-        link:"/"
+        link:"/",
+        caseStudyId: 3, // Reference to CaseStudyData
     },
 
 ]

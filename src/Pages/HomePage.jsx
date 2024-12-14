@@ -6,6 +6,7 @@ import VideoBack from '../Assets/Background.mp4';
 import Testimonials from '../components/Testimonials';
 import { BentoGridThirdDemo } from '../components/smallabout'; // Import the FeaturesSectionDemo component
 import Footer from '../components/Footer';
+import ReactorSecene from '../components/ReactorSecene';
 
 
 
@@ -18,15 +19,15 @@ function HomePage() {
         <Navbar />
 
         {/* Background Video */}
-        <video
+        {/* <video
           className="absolute top-0 left-0 w-full h-full object-cover"
           src={VideoBack}
           autoPlay
           loop
           muted
           playsInline
-        />
-
+        /> */}
+        <ReactorSecene/>
         {/* Hero Section */}
         <div className="Hero-Section w-full h-full flex items-center justify-start relative p-8">
           <div className="Hero-text w-1/2 mb-16">

@@ -1,71 +1,54 @@
-import React from 'react';
-import '../Styles/Homepage.css';
-import Navbar from '../components/Navbar';
-import VideoBack from '../Assets/Background.mp4';
-
-import Testimonials from '../components/Testimonials';
-import { BentoGridThirdDemo } from '../components/smallabout'; // Import the FeaturesSectionDemo component
-import Footer from '../components/Footer';
-import ReactorSecene from '../components/ReactorSecene';
-
-
-
+import React from "react";
+import "../Styles/Homepage.css";
+import Navbar from "../components/Navbar";
+import Testimonials from "../components/Testimonials";
+import { BentoGridThirdDemo } from "../components/smallabout";
+import Footer from "../components/Footer";
+import HomePageScene from "../components/HomepageScene";
 
 function HomePage() {
   return (
     <>
-      <div className="Homepage-Container w-full h-screen bg-black overflow-auto relative">
+      <div className="Homepage-Container w-full min-h-screen bg-black overflow-auto relative z-20">
         {/* Navbar */}
         <Navbar />
 
-        {/* Background Video */}
-        {/* <video
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          src={VideoBack}
-          autoPlay
-          loop
-          muted
-          playsInline
-        /> */}
-        <ReactorSecene/>
+        {/* 3D Background Scene */}
+        <div className="absolute top-0 left-0 w-full h-full z-[-10]">
+          <HomePageScene />
+        </div>
+
         {/* Hero Section */}
-        <div className="Hero-Section w-full h-full flex items-center justify-start relative p-8">
-          <div className="Hero-text w-1/2 mb-16">
-            <p className="Hero-text-1 text-white text-8xl font-semibold font-poppins drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
+        <div className="Hero-Section w-full min-h-[90vh] flex items-center justify-center relative px-4 sm:px-8 z-20">
+          <div className="Hero-text w-full max-w-screen-md mx-auto text-center">
+            <p className="Hero-text-1 text-white text-lg sm:text-2xl md:text-3xl lg:text-4xl font-regular font-poppins drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
               Empowering Ideas
             </p>
-            <p className="Hero-text-2 text-white text-6xl font-poppins font-semibold my-5 drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
+            <p className="Hero-text-2 text-white text-4xl sm:text-6xl md:text-7xl lg:text-5xl font-poppins font-semibold my-5 drop-shadow-[0_0_5px_rgba(0,0,0,1)]">
               Engineering Success
             </p>
             <a href="mailto:connect.ktisislabs@gmail.com">
-              <button className="bg-white text-black border border-1 border-black font-semibold py-4 font-regular px-4 text-md font-poppins rounded-full hover:text-white hover:bg-black">
+              <button className="bg-white text-black border border-black text-sm sm:text-lg md:text-xl font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-full hover:text-white hover:bg-black transition-all duration-300">
                 Let's Connect
               </button>
             </a>
           </div>
         </div>
 
-       
-
         {/* Features Section */}
-        <section>
-          <BentoGridThirdDemo /> {/* Include FeaturesSectionDemo */}
+        <section className="relative px-4 sm:px-8 lg:px-16 py-8 sm:py-12 z-20">
+          <BentoGridThirdDemo /> {/* Bento Grid Fix */}
         </section>
 
         {/* Testimonials Section */}
-        <section>
+        <section className="relative px-4 sm:px-8 lg:px-16 py-8 sm:py-12 z-20">
           <Testimonials />
         </section>
-        
-        <section>
-          <Footer/>
+
+        {/* Footer Section */}
+        <section className="relative px-4 sm:px-8 lg:px-16 z-20">
+          <Footer />
         </section>
-       
-         
-    
-      
-         
-       
       </div>
     </>
   );

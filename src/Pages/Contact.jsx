@@ -1,5 +1,4 @@
 import React from "react";
-import { TextHoverEffect } from "../components/ui/text-hover-effect";
 import Navbar from '../components/Navbar';
 import { GrInstagram } from "react-icons/gr";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -13,7 +12,7 @@ export default function Contact() {
       <div className='relative w-full h-screen bg-black overflow-y-auto'>
         {/* Navbar component */}
         <Navbar />
-        <TextHoverEffect text="Contact" />
+    
         {/* Contact Section */}
         <div className="absolute z-20 flex flex-col justify-center items-center text-center w-full h-auto px-4">
           {/* Text hover effect */}

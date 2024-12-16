@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import '../Styles/About.css'
 
 
+
 function About() {
  
   return (
@@ -14,6 +15,7 @@ function About() {
         <Navbar />
 
         <div className="About-Section w-full h-full absolute flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 text-center space-y-8 bg-black bg-opacity-50">
+        
           <h1 className="text-white font-poppins text-4xl md:text-5xl font-bold">
             Welcome to <span className="text-white">KtisisLabs</span>
           </h1>

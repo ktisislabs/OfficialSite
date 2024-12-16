@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { WorkData } from "../Data/Work";
 import { CaseStudyData } from "../Data/casestudy"; // Import CaseStudyData
 import Casestudy from "../components/Casestudy";
+import Footer from '../components/Footer'
 
 function Work() {
   const [openCaseStudy, setOpenCaseStudy] = useState(null);
@@ -81,7 +82,9 @@ function Work() {
             ))}
           </div>
         </div>
+        <Footer/>
       </div>
+     
     </>
   );
 }

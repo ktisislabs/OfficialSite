@@ -9,7 +9,7 @@ import HomePageScene from "../components/HomepageScene";
 function HomePage() {
   return (
     <>
-      <div className="Homepage-Container w-full min-h-screen bg-black overflow-auto relative z-20">
+      <div className="Homepage-Container w-full min-h-screen bg-black overflow-y-auto overflow-x-hidden relative z-20">
         {/* Navbar */}
         <Navbar />
 
@@ -46,9 +46,9 @@ function HomePage() {
         </section>
 
         {/* Footer Section */}
-        <section className="relative px-4 sm:px-8 lg:px-16 z-20">
+        
           <Footer />
-        </section>
+      
       </div>
     </>
   );

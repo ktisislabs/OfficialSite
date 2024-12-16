@@ -31,7 +31,7 @@ function Navbar() {
           <Link to='/About'>    <li className="Menu-Item">About</li> </Link>
           <Link to='/Services'> <li className="Menu-Item">Services</li> </Link>
            <Link to='/Work'> <li className="Menu-Item">Work</li></Link>
-         <Link to='/Contact'>   <li className="Menu-Item">Contact</li></Link>
+         <Link to='/Contact'>   <li className="Menu-Item">Get a Quote</li></Link>
           </ul>
 
           <div className="Icons-drawer flex flex-wrap justify-center items-center gap-5 text-white mt-36 mr-16">
@@ -66,7 +66,7 @@ function Navbar() {
         <Link to='/About'>  <li className="hover:text-gray-400 font-medium cursor-pointer">About.</li></Link>
        <Link to='/Services'> <li className="hover:text-gray-400 font-medium cursor-pointer">Services.</li></Link>  
         <Link to='/Work'><li className="hover:text-gray-400 font-medium cursor-pointer">Work.</li></Link>  
-       <Link to='/Contact'> <li className="hover:text-gray-400 font-medium cursor-pointer">Contact.</li></Link>  
+       <Link to='/Contact'> <li className="hover:text-gray-400 font-medium cursor-pointer">Get a Quote.</li></Link>  
         </ul>
         <div className="Hamburger-div">
           <TiThMenu className="text-white text-3xl cursor-pointer" onClick={handleMenuToggle} />

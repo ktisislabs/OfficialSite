@@ -2,7 +2,7 @@ import React from 'react';
 import VideoBack from '../Assets/Background.mp4';
 import Navbar from '../components/Navbar';
 import '../Styles/About.css'
-
+import Footer from '../components/Footer'
 
 
 function About() {
@@ -31,7 +31,9 @@ function About() {
           Connect : connect.ktisislabs@gmail.com
           </p>
         </div>
+        
       </div>
+      <Footer/>
     </>
   );
 }

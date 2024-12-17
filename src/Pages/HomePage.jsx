@@ -2,9 +2,11 @@ import React from "react";
 import "../Styles/Homepage.css";
 import Navbar from "../components/Navbar";
 import Testimonials from "../components/Testimonials";
-import { BentoGridThirdDemo } from "../components/smallabout";
+// import { BentoGridThirdDemo } from "../components/smallabout";
 import Footer from "../components/Footer";
 import HomePageScene from "../components/HomepageScene";
+import ServiceHero from "../components/ServiceHero";
+import SubHero from '../components/SubHero'
 
 function HomePage() {
   return (
@@ -36,14 +38,17 @@ function HomePage() {
         </div>
 
         {/* Features Section */}
-        <section className="relative px-4 sm:px-8 lg:px-16 py-8 sm:py-12 z-20">
-          <BentoGridThirdDemo /> {/* Bento Grid Fix */}
-        </section>
+
+
+          <ServiceHero/>
+     
 
         {/* Testimonials Section */}
-        <section className="relative px-4 sm:px-8 lg:px-16 py-8 sm:py-12 z-20">
+     
           <Testimonials />
-        </section>
+       
+
+        <SubHero/>
 
         {/* Footer Section */}
         

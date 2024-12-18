@@ -1,7 +1,8 @@
 
 import RaavyaHome from '../Assets/Works/Ui-Raavya/img1.png'
 import RaavyaMob from '../Assets/Works/Ui-Raavya/imgmob.png'
-
+import img4 from '../Assets/Works/Ui-POH/img4.png';
+import imgpoh from '../Assets/Works/Ui-POH/imgpoh.png';
 
 
 
@@ -61,5 +62,61 @@ export const CaseStudyData = [
             viewProjectLink: "http://theraavya.in/",
            
         }
+    },
+    {
+        id: 2,
+        tagline: "Premium Handcrafted Pottery for Every Home",
+        introduction: "Pots of Happiness is a boutique pottery studio specializing in unique, handcrafted pottery pieces that blend artistry and functionality. This project focused on building a visually rich, user-friendly platform to showcase their premium pottery collection and drive customer engagement.",
+        clientInfo: {
+            name: "Pots of Happiness",
+            description: "A boutique pottery studio offering handcrafted pottery pieces, known for their artistic designs and premium quality.",
+            location: "Jaipur, India",
+        },
+        challenges: [
+            "Showcasing intricate, handcrafted details effectively online.",
+            "Creating an immersive visual experience while maintaining performance.",
+            "Ensuring a smooth user journey for browsing pottery items."
+        ],
+        objectives: [
+            "Design a visually immersive and clean interface to highlight the craftsmanship.",
+            "Develop an interactive catalog to showcase pottery collections effectively.",
+            "Build a scalable platform to support future product launches and user inquiries."
+        ],
+        process: {
+            research: "Analyzed customer expectations, market trends in pottery , ceramics, and competitor strategies.",
+            wireframing: "Created low-fidelity wireframes to map out user flow and key touchpoints.",
+            design: "Crafted a minimalistic, art-inspired UI using Figma, focusing on visual storytelling and branding.",
+            testing: "Conducted A/B testing and gathered user feedback to optimize the experience."
+        },
+        solutions: [
+            "Developed an elegant studio section with features to highlight intricate details.",
+            "Ensured a responsive design optimized for both mobile and desktop users."
+        ],
+        results: {
+            engagement: "40% increase in user engagement within the first month.",
+            inquiries: "25% rise in customized order inquiries post-launch.",
+            feedback: "The platform received praise for its aesthetics and user-friendliness from customers and stakeholders."
+        },
+        keyFeatures: [
+            "Immersive product display with immersive experience.",
+            "Clean, art-inspired interface tailored for premium handcrafted pottery.",
+            "Mobile-friendly responsive design for an optimal user experience."
+        ],
+        visuals: [
+            {
+                imageUrl: img4,
+                description: "Screenshot of the homepage showcasing the Landing Page"
+            },
+            {
+                imageUrl: imgpoh,
+                description: "Mobile view displaying individual pottery items with description."
+            }
+        ],
+        clientTestimonial: "Exceptional service and attention to detail! They brought our vision to life in ways we couldn’t have imagined.",
+        callToAction: {
+            viewProjectLink: "https://potsofhappiness-demo.vercel.app/",
+        }
     }
+    
+
 ];

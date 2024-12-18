@@ -46,10 +46,10 @@ export const WorkData=[
     },
     {
         id:5,
-        Name:"Ephemeral Vidp",
+        Name:"Ephemeral Vidp(Ongoing)",
         Industry:"Creative Design Studio",
         image:Ephe,
-        Service:"UI/UX Design ",
+        Service:"Web Design ",
          Description:"Ephemeral Vidp is a cutting-edge design studio specializing in creating captivating visuals and innovative designs that leave a lasting impression.",
         link:"/",
         caseStudyId: 3, // Reference to CaseStudyData

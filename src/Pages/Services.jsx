@@ -2,8 +2,19 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../Styles/Services.css';
+import { Link } from 'react-router-dom';
 
 function Services() {
+
+const CustomLinks=[
+  "/Services/CustomSoftwareSolutions",
+  "/Services/MobileApplicationDevelopment",
+  "/Services/WebApplicationDevelopment",
+  "/Services/WebandUI/UXDesign",
+  "/Services/QualityAssurance",
+  "/Services/DeploymentandMaintence"
+]
+
   return (
     <>
       {/* Navbar */}
@@ -53,7 +64,6 @@ function Services() {
                 {[
                   'Custom Software Development',
                   'Mobile Application Development',
-                  'Mobile App Development',
                   'Web Application Development',
                   'Web and UI / UX Design',
                   'Software Testing',
@@ -63,9 +73,9 @@ function Services() {
                     key={index}
                     className="flex justify-between items-center border-b border-gray-700 pb-4 group cursor-pointer"
                   >
-                    <h3 className="text-2xl font-medium group-hover:text-gray-400 transition">
+                  <Link to={CustomLinks[index]}> <h3 className="text-2xl font-medium group-hover:text-gray-400 transition">
                       {service}
-                    </h3>
+                    </h3></Link> 
                     <span className="text-2xl text-gray-400 group-hover:text-white transition">
                       →
                     </span>

@@ -66,7 +66,7 @@ const CustomLinks=[
                   'Mobile Application Development',
                   'Web Application Development',
                   'Web and UI / UX Design',
-                  'Software Testing',
+                  'Quality Assurance and Software Testing',
                   'Deployment and Maintence',
                 ].map((service, index) => (
                   <li

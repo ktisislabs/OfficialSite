@@ -3,14 +3,19 @@ import VideoBack from '../Assets/Background.mp4';
 import Navbar from '../components/Navbar';
 import '../Styles/About.css'
 import Footer from '../components/Footer'
+import {Helmet} from 'react-helmet' ; 
 
 
 function About() {
  
   return (
     <>
- 
-      <div className="About-Container w-full h-screen bg-black overflow-hidden relative">
+ <Helmet>
+        <title>About Us | Ktisis Labs</title>
+        <meta name="description" content="Learn more about Ktisis Labs, our mission, vision, and values." />
+        <meta name="keywords" content="About Ktisis Labs, Company Overview, Our Team" />
+      </Helmet>
+      <div className="About-Container w-full h-screen bg-black overflow-y-hidden overflow-x-hidden relative">
         
         <Navbar />
 

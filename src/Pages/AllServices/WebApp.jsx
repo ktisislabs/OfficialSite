@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar';
 import WebAppImg from '../../Assets/webapp.jpg';
 import WebAppBG from '../../Assets/webappbg.jpg';
 import Footer from '../../components/Footer';
+import { Link } from 'react-router-dom';
 
 function WebApp() {
   return (
@@ -98,18 +99,18 @@ function WebApp() {
 
           {/* Heading */}
           <h1 className="font-poppins font-bold text-white text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
-            Let’s build <span className="font-extrabold text-white">the future</span> together
+            Let’s build <span className="font-extrabold text-white"></span> together
           </h1>
 
           {/* Subtext */}
-          <p className="font-poppins text-gray-300 text-sm md:text-base lg:text-lg max-w-xl mx-auto mb-8">
+          <p className="font-poppins text-white text-sm md:text-base lg:text-lg max-w-xl mx-auto mb-8">
             Transform your vision into reality with custom web application solutions that combine cutting-edge technology, user-focused design, and unmatched expertise.
           </p>
 
           {/* Button */}
-          <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
+      <Link to='/Contact'>   <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
             Get in Touch <span className="ml-2">&bull;</span>
-          </button>
+          </button></Link> 
         </section>
         <Footer />
       </div>

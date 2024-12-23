@@ -11,7 +11,7 @@ export const WorkData=[
         image:Raavya,
         Service:"UI/UX Design",
         Description:"The Raavya Home Creator is a premium brand offering sustainable furniture and home decor.",
-        link:"/",
+        link:"http://theraavya.in/",
         caseStudyId: 1, 
     },
     {
@@ -21,7 +21,7 @@ export const WorkData=[
         image:Raavya,
         Service:"Web Development ",
          Description:"The Raavya Home Creator is a premium brand offering sustainable furniture and home decor.",
-        link:"/",
+        link:"http://theraavya.in/",
         caseStudyId: 1, // Reference to CaseStudyData
     },
     {
@@ -51,7 +51,7 @@ export const WorkData=[
         image:Ephe,
         Service:"Web Design ",
          Description:"Ephemeral Vidp is a cutting-edge design studio specializing in creating captivating visuals and innovative designs that leave a lasting impression.",
-        link:"/",
+        link:"https://www.ephemeralvidp.in/",
         caseStudyId: 3, // Reference to CaseStudyData
     },
 

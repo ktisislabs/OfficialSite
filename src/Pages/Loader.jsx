@@ -3,6 +3,7 @@ import Logo from "../Assets/Logo2.png";
 import { useNavigate } from "react-router-dom";
 import "../Styles/Loader.css";
 import { AuroraBackground } from "../components/ui/aurora-background";
+import { Helmet } from "react-helmet";
 
 export default function SparklesPreview() {
   const navigate = useNavigate();
@@ -18,6 +19,11 @@ export default function SparklesPreview() {
   }, []);
 
   return (
+    <>
+     <Helmet>
+        <title>Loading... | Ktisis Labs</title>
+        <meta name="description" content="Please wait while we load your content." />
+      </Helmet>
     <AuroraBackground>
     <div className="Loader-Container w-full h-screen bg-black flex flex-col items-center justify-center overflow-hidden">
       {/* Image with fade-in animation */}
@@ -40,5 +46,6 @@ export default function SparklesPreview() {
       `}</style>
     </div>
     </AuroraBackground>
+    </>
   );
 }

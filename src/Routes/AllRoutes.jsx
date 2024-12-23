@@ -16,7 +16,7 @@ import Deployment from '../Pages/AllServices/Deployment' ;
 
 function AllRoutes() {
   return (
- <>
+
  <Routes>
   <Route path="/" element={<Loader/>}></Route>
   <Route path="/Homepage" element={<HomePage/>}></Route>
@@ -32,7 +32,7 @@ function AllRoutes() {
   <Route path="/Services/DeploymentandMaintence" element={<Deployment/>}></Route>
 
  </Routes>
- </>
+ 
   )
 }
 

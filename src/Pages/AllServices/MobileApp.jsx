@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar';
 import MobileAppImg from '../../Assets/mobileapp.jpg';
 import MobileAppBG from '../../Assets/mobileappbg.jpg';
 import Footer from '../../components/Footer';
+import {Link} from 'react-router-dom'
 
 function MobileApp() {
   return (
@@ -42,23 +43,23 @@ function MobileApp() {
               <div className='w-full md:w-1/2'>
                 <ul className='space-y-5'>
                   <li className='flex items-center'>
-                    <span className='w-6 h-6 bg-blue-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
+                    <span className='w-6 h-6 bg-green-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
                     <span className='text-white font-poppins text-base md:text-lg'>Requirement Analysis</span>
                   </li>
                   <li className='flex items-center'>
-                    <span className='w-6 h-6 bg-blue-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
+                    <span className='w-6 h-6 bg-green-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
                     <span className='text-white font-poppins text-base md:text-lg'>UI/UX Design</span>
                   </li>
                   <li className='flex items-center'>
-                    <span className='w-6 h-6 bg-blue-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
+                    <span className='w-6 h-6 bg-green-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
                     <span className='text-white font-poppins text-base md:text-lg'>App Development</span>
                   </li>
                   <li className='flex items-center'>
-                    <span className='w-6 h-6 bg-blue-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
+                    <span className='w-6 h-6 bg-green-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
                     <span className='text-white font-poppins text-base md:text-lg'>Quality Assurance</span>
                   </li>
                   <li className='flex items-center'>
-                    <span className='w-6 h-6 bg-blue-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
+                    <span className='w-6 h-6 bg-green-500 text-white flex items-center justify-center rounded-full mr-4'>✓</span>
                     <span className='text-white font-poppins text-base md:text-lg'>App Launch and Support</span>
                   </li>
                 </ul>
@@ -96,7 +97,7 @@ function MobileApp() {
           {/* Heading */}
           <h1 className="font-poppins font-bold text-white text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
             Let’s build
-            <span className="font-extrabold text-white"> together</span>
+            <span className="font-extrabold text-white"> together </span>
           </h1>
 
           {/* Subtext */}
@@ -105,9 +106,9 @@ function MobileApp() {
           </p>
 
           {/* Button */}
-          <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
+        <Link to='/Contact'> <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
             Get in Touch <span className="ml-2">&bull;</span>
-          </button>
+          </button></Link> 
         </section>
 
         <Footer />

@@ -3,6 +3,8 @@ import Navbar from '../../components/Navbar';
 import QualityImg from '../../Assets/quality.jpg';
 import QualityBG from '../../Assets/qualitybg.jpg';
 import Footer from '../../components/Footer';
+import {Link} from 'react-router-dom' ;
+
 
 function QualityA() {
   return (
@@ -124,9 +126,9 @@ function QualityA() {
           </p>
 
           {/* Button */}
-          <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
-            Get Started <span className="ml-2">&bull;</span>
-          </button>
+          <Link to='/Contact'>  <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
+                  Get in Touch <span className="ml-2">•</span>
+                </button></Link>
         </section>
 
         <Footer />

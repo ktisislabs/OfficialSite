@@ -3,8 +3,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import WebDesignImg from '../../Assets/webdesign.jpg';
 import WebDesignBG from '../../Assets/webdesignbg.jpg';
-// import UIUXImg from '../../Assets/uiux.jpg';
-// import UIUXBG from '../../Assets/uiuxbg.jpg';
+import { Link } from 'react-router-dom';
 
 function WebDesign() {
   return (
@@ -99,9 +98,9 @@ function WebDesign() {
           <p className="font-poppins text-gray-800 text-sm md:text-base lg:text-lg max-w-xl mx-auto mb-8">
             Let us transform your vision into captivating designs that resonate with your audience.
           </p>
-          <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
-            Get in Touch <span className="ml-2">&bull;</span>
-          </button>
+          <Link to='/Contact'>  <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
+                  Get in Touch <span className="ml-2">•</span>
+                </button></Link>
         </section>
         <Footer />
       </div>

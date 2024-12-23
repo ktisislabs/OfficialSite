@@ -3,10 +3,17 @@ import Navbar from '../../components/Navbar';
 import SDE from '../../Assets/sde.jpg'
 import SDEBG from '../../Assets/sdebg.jpg'
 import Footer from '../../components/Footer';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function Software() {
   return (
     <>
+     <Helmet>
+        <title>Software Development | Ktisis Labs</title>
+        <meta name="description" content="Professional software development services tailored to your needs." />
+        <meta name="keywords" content="Software Development, Custom Solutions, Professional Software" />
+      </Helmet>
       <div className='Software-Section w-screen h-screen overflow-y-auto'>
         <Navbar />
 
@@ -105,9 +112,9 @@ Take the first step towards a smarter future and transform your business with cu
                 </p>
         
                 {/* Button */}
-                <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
+              <Link to='/Contact'>  <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
                   Get in Touch <span className="ml-2">•</span>
-                </button>
+                </button></Link>
               </section>
               <Footer/>
       </div>

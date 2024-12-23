@@ -2,14 +2,15 @@ import React from 'react'
 import AllRoutes from './Routes/AllRoutes'
 
 
+
 function App() {
   return (
    <>
- 
-     <AllRoutes/>
 
+     <AllRoutes/>
+  
    </>
   )
 }
 
-export default App
+export default App ;

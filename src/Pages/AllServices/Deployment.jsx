@@ -3,6 +3,8 @@ import Navbar from '../../components/Navbar';
 import DeploymentImg from '../../Assets/deployment.jpg';
 import DeploymentBG from '../../Assets/deploymentbg.jpg';
 import Footer from '../../components/Footer';
+import { Link } from 'react-router-dom';
+
 
 function DeploymentAndMaintenance() {
   return (
@@ -97,14 +99,14 @@ function DeploymentAndMaintenance() {
           </h1>
 
           {/* Subtext */}
-          <p className="font-poppins text-gray-200 text-sm md:text-base lg:text-lg max-w-xl mx-auto mb-8">
+          <p className="font-poppins text-white text-sm md:text-base lg:text-lg max-w-xl mx-auto mb-8">
             Partner with us for seamless deployment and reliable maintenance of your software.
           </p>
 
           {/* Button */}
-          <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
-            Get Started <span className="ml-2">&bull;</span>
-          </button>
+          <Link to='/Contact'>  <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
+                  Get in Touch <span className="ml-2">•</span>
+                </button></Link>
         </section>
 
         <Footer />

@@ -20,9 +20,9 @@ function ServiceHero() {
           Our Services
         </p>
         <p className="font-poppins text-white font-semibold text-4xl sm:text-5xl mb-4">
-          How we can help you?
+          How can we help you ?
         </p>
-        <p className="font-poppins text-white font-thin text-center sm:text-lg w-full max-w-lg mx-auto">
+        <p className="font-poppins text-white font-regular text-center sm:text-lg w-full max-w-lg mx-auto">
           Transparency, reliability, and outstanding customer experiences are at the core of our values. We take pride in fostering strong relationships with our clients, communicating openly at every stage of the development process.
         </p>
       </div>

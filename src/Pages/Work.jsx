@@ -4,7 +4,7 @@ import { WorkData } from "../Data/Work";
 import { CaseStudyData } from "../Data/casestudy"; // Import CaseStudyData
 import Casestudy from "../components/Casestudy";
 import Footer from '../components/Footer'
-
+import { Helmet } from "react-helmet";
 function Work() {
   const [openCaseStudy, setOpenCaseStudy] = useState(null);
 
@@ -20,6 +20,11 @@ function Work() {
 
   return (
     <>
+    <Helmet>
+        <title>Our Work | Ktisis Labs</title>
+        <meta name="description" content="Explore the portfolio of Ktisis Labs and see our amazing work." />
+        <meta name="keywords" content="Portfolio, Projects, Ktisis Labs Work" />
+      </Helmet>
       {/* Case Study Modal */}
       {openCaseStudy && <Casestudy data={openCaseStudy} closeCaseStudy={closeCasestudy} />}
 
@@ -35,7 +40,7 @@ function Work() {
           </h1>
 
           {/* Grid Layout for Work Cards */}
-          <div className="Card-grid-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-6xl">
+          <div className="Card-grid-container grid grid-cols-1 mb-5 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-6xl">
             {WorkData.map((item, index) => (
               <div
                 key={index}

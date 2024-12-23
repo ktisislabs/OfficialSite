@@ -2,15 +2,20 @@ import React from "react";
 import "../Styles/Homepage.css";
 import Navbar from "../components/Navbar";
 import Testimonials from "../components/Testimonials";
-// import { BentoGridThirdDemo } from "../components/smallabout";
 import Footer from "../components/Footer";
 import HomePageScene from "../components/HomepageScene";
 import ServiceHero from "../components/ServiceHero";
 import SubHero from '../components/SubHero'
+import {Helmet} from 'react-helmet' ; 
 
 function HomePage() {
   return (
     <>
+     <Helmet>
+        <title>Home | KtisisLabs</title>
+        <meta name="description" content="Welcome to the home page of my React app." />
+        <meta name="keywords" content="React, SEO, Helmet-Async" />
+      </Helmet>
       <div className="Homepage-Container w-full min-h-screen bg-black overflow-y-auto overflow-x-hidden relative z-20">
         {/* Navbar */}
         <Navbar />

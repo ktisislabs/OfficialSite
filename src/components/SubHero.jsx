@@ -1,5 +1,6 @@
 import React from 'react';
 import Herocta from '../Assets/herocta.jpg';
+import {Link} from 'react-router-dom' ; 
 
 function SubHero() {
   return (
@@ -14,7 +15,7 @@ function SubHero() {
 
         {/* Heading */}
         <h1 className="font-poppins font-bold text-white text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
-          Let’s build <br />
+          Let’s  <br />
           <span className="font-extrabold text-white">innovate together</span>
         </h1>
 
@@ -25,9 +26,9 @@ function SubHero() {
         </p>
 
         {/* Button */}
-        <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
+     <Link to='/Contact'> <button className="bg-white text-black font-medium rounded-full px-6 py-3 shadow-md hover:bg-gray-200 transition duration-300">
           Get in Touch <span className="ml-2">•</span>
-        </button>
+        </button></Link>  
       </section>
     </>
   );

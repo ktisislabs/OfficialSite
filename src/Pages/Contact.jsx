@@ -113,7 +113,7 @@ export default function Contact() {
                 />
               </div>
 
-              <button className="w-full py-3 rounded-full bg-purple-500 text-white font-medium hover:bg-purple-600">
+              <button className="w-full py-3 rounded-full bg-white text-black font-medium hover:bg-purple-600">
                 Submit
               </button>
             </form>

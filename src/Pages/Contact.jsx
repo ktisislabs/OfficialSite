@@ -1,15 +1,26 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Helmet } from 'react-helmet';
+import { useForm } from '@formspree/react';
+import toast from 'react-hot-toast';
+
 export default function Contact() {
   const [activeFAQ, setActiveFAQ] = useState(null);
+  const [state, handleSubmit] = useForm("xovvjgvy");
 
   // Toggle active FAQ
   const toggleFAQ = (index) => {
     setActiveFAQ(activeFAQ === index ? null : index);
   };
-
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success('Thank you for reaching out to us!', {
+        duration: 4000,
+        position: 'top-center',
+      });
+    }
+  }, [state.succeeded]);
   return (
     <>
          <Helmet>
@@ -47,7 +58,7 @@ export default function Contact() {
             </div>
 
             {/* Right Form Section */}
-            <form className="w-full lg:w-1/2 bg-black border border-gray-600 rounded-xl p-6 shadow-lg">
+            <form className="w-full lg:w-1/2 bg-black border border-gray-600 rounded-xl p-6 shadow-lg" onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label
                   htmlFor="name"

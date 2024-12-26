@@ -28,6 +28,13 @@ module.exports = {
         },
       },
     },
+    screens:{
+      xs: "320px",
+      sm: "375px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
   },
   plugins: [
     addVariablesForColors, // Plugin to generate CSS variables for colors

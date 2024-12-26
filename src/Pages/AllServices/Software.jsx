@@ -10,7 +10,7 @@ function Software() {
   return (
     <>
      <Helmet>
-        <title>Software Development | Ktisis Labs</title>
+        <title>Software Development | KtisisLabs</title>
         <meta name="description" content="Professional software development services tailored to your needs." />
         <meta name="keywords" content="Software Development, Custom Solutions, Professional Software" />
       </Helmet>

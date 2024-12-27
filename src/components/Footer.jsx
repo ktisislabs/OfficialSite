@@ -14,7 +14,7 @@ function Footer() {
 
   useEffect(() => {
     if (state.succeeded) {
-      toast.success('Thank you for reaching out to us!', {
+      toast.success('Thank you for subscribing!', {
         duration: 4000,
         position: 'top-center',
       });

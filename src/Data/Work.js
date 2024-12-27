@@ -41,7 +41,7 @@ export const WorkData=[
         image:POH,
         Service:"UI/UX Design ",
          Description:"A boutique pottery studio offering unique, handcrafted pottery pieces.",
-        link:"/",
+        link:"https://potsofhappiness-demo.vercel.app/",
         caseStudyId: 2, // Reference to CaseStudyData
     },
     {

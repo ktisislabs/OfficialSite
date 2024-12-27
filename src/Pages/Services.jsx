@@ -19,7 +19,7 @@ const CustomLinks=[
   return (
     <>
      <Helmet>
-        <title>Our Services | Ktisis Labs</title>
+        <title> Services | KtisisLabs</title>
         <meta name="description" content="Discover the range of services offered by Ktisis Labs, including software development, web design, and more." />
         <meta name="keywords" content="Services, Software Development, Web Design, Mobile Apps" />
       </Helmet>

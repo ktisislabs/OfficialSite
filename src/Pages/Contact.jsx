@@ -24,7 +24,7 @@ export default function Contact() {
   return (
     <>
          <Helmet>
-        <title>Contact Us | Ktisis Labs</title>
+        <title>Contact  | KtisisLabs</title>
         <meta name="description" content="Get in touch with Ktisis Labs. We'd love to hear from you!" />
         <meta name="keywords" content="Contact Ktisis Labs, Support, Inquiry" />
       </Helmet>
@@ -41,7 +41,7 @@ export default function Contact() {
 
         {/* Contact Section */}
         <div className="Contact-Section flex flex-col justify-center items-center text-center w-full h-auto px-4 py-16">
-          <p className="text-white font-poppins text-4xl lg:text-5xl font-medium mb-16">
+          <p className="text-white font-poppins text-4xl lg:text-3xl font-medium mb-16">
             Tell Us About Your Project
           </p>
 
@@ -132,7 +132,7 @@ export default function Contact() {
 
           {/* FAQ Section */}
           <div className="FAQ-Section mt-16 w-full max-w-6xl px-6">
-            <p className="text-white font-poppins text-3xl font-medium mb-8 text-left">
+            <p className="text-white font-poppins text-2xl font-medium mb-8 text-center">
               Frequently Asked Questions
             </p>
             <div className="flex flex-col gap-6">

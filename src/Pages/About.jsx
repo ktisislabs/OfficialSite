@@ -11,7 +11,7 @@ function About() {
   return (
     <>
  <Helmet>
-        <title>About Us | Ktisis Labs</title>
+        <title>About | KtisisLabs</title>
         <meta name="description" content="Learn more about Ktisis Labs, our mission, vision, and values." />
         <meta name="keywords" content="About Ktisis Labs, Company Overview, Our Team" />
       </Helmet>

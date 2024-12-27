@@ -1,48 +1,36 @@
-import React from 'react';
-import { TestimonialsData } from '../Data/testimonials';
+import ephemeral from '../Assets/ephemeral.png' ; 
+import poh from '../Assets/poh.png'
+import raavya from '../Assets/raavya.png';
 
-function Testimonials() {
-  return (
-    <>
-      <section className="Testimonials-section w-full h-auto bg-black py-12 mt-36">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-semibold font-bold text-center text-white mb-8">
-            What Our Clients Say
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {TestimonialsData.map((item) => (
-              <div
-                key={item.id}
-                className="testimonial-card bg-black text-white p-6 rounded-lg border shadow hover:shadow-xl transition-shadow"
-              >
-                <div className="flex items-center mb-4">
-                  <img
-                    src={item.profileImage}
-                    alt={`${item.Name}'s profile`}
-                    className="w-16 h-16 rounded-full border-2 border-gray-600"
-                  />
-                  <div className="ml-4">
-                    <h3 className="text-lg font-semibold">{item.Name}</h3>
-                    <p className="text-sm text-gray-400">{item.Designation || "Valued Client"}</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4">
-                  {Array(5)
-                    .fill(0)
-                    .map((_, index) => (
-                      <span key={index} className="text-yellow-400 text-lg">
-                        ★
-                      </span>
-                    ))}
-                </div>
-                <p className="text-gray-300 italic">"{item.Remark}"</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  );
+
+import { AnimatedTestimonials } from "../components/ui/animated-testimonials";
+
+ function Testimonials() {
+  const testimonials = [
+   {
+           id: 1,
+           profileImage: raavya,
+           Name: "Raaghav Khurana",
+           Designation: "Founder at TheRaavya",
+           Remark: "Working with this team has been a game-changer for our business. Their dedication and creativity are unmatched!"
+       },
+       {
+           id: 2,
+           profileImage: poh,
+           Name: "Priyasha Bose",
+           Designation: "Founder at Pots of Happiness",
+           Remark: "Exceptional service and attention to detail! They brought our vision to life in ways we couldn’t have imagined."
+       },
+       {
+           id: 3,
+           profileImage: ephemeral,
+           Name: "Ephemeral Vidp",
+           Designation: "",
+           Remark: "Their professionalism and innovative approach exceeded our expectations. Highly recommend their services!"
+       }
+  ];
+  return <AnimatedTestimonials testimonials={testimonials} />;
 }
 
-export default Testimonials;
+
+export default Testimonials ; 

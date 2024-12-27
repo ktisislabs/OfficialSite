@@ -21,7 +21,7 @@ function Work() {
   return (
     <>
       <Helmet>
-        <title>Our Work | Ktisis Labs</title>
+        <title> Work | KtisisLabs</title>
         <meta
           name="description"
           content="Explore the portfolio of Ktisis Labs and see our amazing work."

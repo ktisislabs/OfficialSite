@@ -21,7 +21,7 @@ export default function SparklesPreview() {
   return (
     <>
      <Helmet>
-        <title>Loading... | Ktisis Labs</title>
+        <title>Welcome to  KtisisLabs</title>
         <meta name="description" content="Please wait while we load your content." />
       </Helmet>
     <AuroraBackground>

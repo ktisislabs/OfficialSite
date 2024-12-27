@@ -4,10 +4,15 @@ import WebAppImg from '../../Assets/webapp.jpg';
 import WebAppBG from '../../Assets/webappbg.jpg';
 import Footer from '../../components/Footer';
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 function WebApp() {
   return (
     <>
+    <Helmet>
+  <title>Web Application Development | KtisisLabs</title>
+  <meta name="description" content="Expert web application development services tailored to your business needs. Build scalable, robust, and user-friendly applications." />
+  <meta name="keywords" content="Web Development, Application Development, Scalable Web Solutions, Professional Web Apps" />
+</Helmet>
       <div className='WebApp-Section w-screen h-screen overflow-y-auto'>
         <Navbar />
 

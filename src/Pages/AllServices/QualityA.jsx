@@ -4,11 +4,16 @@ import QualityImg from '../../Assets/quality.jpg';
 import QualityBG from '../../Assets/qualitybg.jpg';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom' ;
-
+import { Helmet } from 'react-helmet';
 
 function QualityA() {
   return (
     <>
+    <Helmet>
+  <title>Quality Assurance and Software Testing | KtisisLabs</title>
+  <meta name="description" content="Comprehensive quality assurance and software testing services to ensure your applications are bug-free and perform flawlessly." />
+  <meta name="keywords" content="Software Testing, Quality Assurance, Bug-Free Applications, Reliable Software, Testing Services" />
+</Helmet>
       <div className='QualityAssurance-Section w-screen h-screen overflow-y-auto'>
         <Navbar />
 

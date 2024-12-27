@@ -4,10 +4,15 @@ import Footer from '../../components/Footer';
 import WebDesignImg from '../../Assets/webdesign.jpg';
 import WebDesignBG from '../../Assets/webdesignbg.jpg';
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 function WebDesign() {
   return (
     <>
+    <Helmet>
+  <title>Web and UI/UX Design | KtisisLabs</title>
+  <meta name="description" content="Crafting intuitive and visually stunning web and UI/UX designs for businesses. Enhance your user experience with cutting-edge designs." />
+  <meta name="keywords" content="UI/UX Design, Web Design, User Experience, Intuitive Interfaces, Visual Design" />
+</Helmet>
       <div className='WebDesign-Section w-screen h-screen overflow-y-auto'>
         <Navbar />
 

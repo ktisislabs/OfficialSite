@@ -4,10 +4,15 @@ import MobileAppImg from '../../Assets/mobileapp.jpg';
 import MobileAppBG from '../../Assets/mobileappbg.jpg';
 import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom'
-
+import { Helmet } from 'react-helmet';
 function MobileApp() {
   return (
     <>
+    <Helmet>
+        <title>Mobile Application Development | KtisisLabs</title>
+        <meta name="description" content="Professional software development services tailored to your needs." />
+        <meta name="keywords" content="Software Development, Custom Solutions, Professional Software" />
+      </Helmet>
       <div className='MobileApp-Section w-screen h-screen overflow-y-auto'>
         <Navbar />
 

@@ -4,11 +4,16 @@ import DeploymentImg from '../../Assets/deployment.jpg';
 import DeploymentBG from '../../Assets/deploymentbg.jpg';
 import Footer from '../../components/Footer';
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 
 function DeploymentAndMaintenance() {
   return (
     <>
+    <Helmet>
+  <title>Deployment and Maintenance | KtisisLabs</title>
+  <meta name="description" content="Seamless deployment and reliable maintenance services to keep your software running smoothly and efficiently." />
+  <meta name="keywords" content="Deployment Services, Software Maintenance, Reliable Operations, Software Deployment" />
+</Helmet>
       <div className="Deployment-Maintenance-Section w-screen h-screen overflow-y-auto">
         <Navbar />
 

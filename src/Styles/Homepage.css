@@ -1,265 +1,206 @@
+/* Base styles */
+.Hero-Section {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Hero-text-1, .Hero-text-2 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0,0,0,1);
+}
+
+.Hero-Section button {
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+.Hero-Section button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Hero Section responsive design */
 @media(max-width:1440px){
-    .Hero-Section{
-        max-width: 1440px;
-     
-       
+    .Hero-text-1 {
+        font-size: 3rem;
     }
-    .Hero-text-1{
-    
-        font-size: 4rem;
-    }
-    .Hero-text-2{
-        font-size: 2rem;
+    .Hero-text-2 {
+        font-size: 2.5rem;
     }
     .Hero-Section button {
-        background-color: white;
-        color: black;
-        font-size: small;
-        
+        font-size: 1rem;
     }
-   
 }
 
 @media(max-width:1024px){
-    .Hero-Section{
-        max-width: 1440px;
+    .Hero-text-1 {
+        font-size: 3.5rem;
     }
-    .Hero-text-1{
-    
-        font-size: 3rem;
-    }
-    .Hero-text-2{
+    .Hero-text-2 {
         font-size: 2rem;
     }
     .Hero-Section button {
-        background-color: white;
-        color: black;
-        font-size: small;
-        
+        font-size: 1rem;
     }
 }
+
 @media(max-width:950px){
-    .Hero-Section{
-        max-width: 950px;
+    .Hero-text-1 {
+        font-size: 3rem;
     }
-    .Hero-text-1{
-    
-        font-size: 2.9rem;
-    }
-    .Hero-text-2{
-        font-size: 1.9rem;
+    .Hero-text-2 {
+        font-size: 1.8rem;
     }
     .Hero-Section button {
-        background-color: white;
-        color: black;
-        font-size: smaller;
-        
-    }
-    .smallaobut-header{
-        font-size: 2.3rem;
-    }
-    .smallabout-text{
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 }
+
 @media(max-width:860px){
-    .Hero-Section{
-        max-width: 860px;
+    .Hero-text-1 {
+        font-size: 2.8rem;
     }
-    .Hero-text-1{
-    
+    .Hero-text-2 {
+        font-size: 1.7rem;
+    }
+    .Hero-Section button {
+        font-size: 0.85rem;
+    }
+}
+
+@media(max-width:768px){
+    .Hero-text-1 {
         font-size: 2.6rem;
     }
-    .Hero-text-2{
+    .Hero-text-2 {
         font-size: 1.6rem;
     }
     .Hero-Section button {
-        background-color: white;
-        color: black;
-        font-size: smaller;
-        
-    }
-    .smallaobut-header{
-        font-size: 2.3rem;
-    }
-    .smallabout-text{
-        font-size: 1.5rem;
+        font-size: 0.75rem;
     }
 }
-@media(max-width:768px){
-    .Hero-Section{
-        max-width: 768px;
+
+@media(max-width:447px){
+    .Hero-text-1 {
+        font-size: 2.5rem;
     }
-    .Hero-text-1{
-    
-        font-size: 3rem;
-    }
-    .Hero-text-2{
-        font-size: 2rem;
+    .Hero-text-2 {
+        font-size: 1.5rem;
     }
     .Hero-Section button {
-        background-color: white;
-        color: black;
-        font-size: 0.7rem;
-        
+        font-size: 0.6rem;
     }
-    .smallaobut-header{
-        font-size: 2.3rem;
+}
+
+@media(max-width:497px){
+    .Hero-text-1 {
+        font-size: 2.6rem;
     }
-    .smallabout-text{
-        font-size: 1.5rem;
+    .Hero-text-2 {
+        font-size: 1.6rem;
+    }
+    .Hero-Section button {
+        font-size: 0.65rem;
     }
 }
 
 @media(max-width:425px){
-    .Hero-Section{
-        max-width: 425px;
-    }
-    .Hero-text-1{
-    width: 100vw;
- 
-        font-size: 2.5rem;
-    }
-    .Hero-text-2{
-        font-size: 1.5rem;
-        width: 100vw;
-  
-    }
-    .Hero-Section button {
-        background-color: white;
-        color: black;
-        font-size: 0.7rem;
-        
-    }
-    .smallaobut-header{
+    .Hero-text-1 {
         font-size: 2.3rem;
     }
-    .smallabout-text{
-        font-size: 1.5rem;
+    .Hero-text-2 {
+        font-size: 1.4rem;
+    }
+    .Hero-Section button {
+        font-size: 0.6rem;
     }
 }
 
 @media(max-width:375px){
-    .Hero-Section{
-        max-width: 375px;
+    .Hero-text-1 {
+        font-size: 2rem;
     }
-    .Hero-text-1{
-        width: 100vw;
-        font-size: 2rem !important;
-    }
-    .Hero-text-2{
-        width: 100vw;
-        font-size: 1.5rem !important;
-    }
-    .Hero-Section button{
-        font-size: 0.5rem;
-    }
-    .smallaobut-header{
+    .Hero-text-2 {
         font-size: 2.3rem;
     }
-    .smallabout-text{
-        font-size: 1.2rem;
+    .Hero-Section button {
+        font-size: 0.5rem;
     }
 }
 
 @media(max-width:320px){
-    .Hero-Section{
-        max-width: 320px;
-       
+    .Hero-text-1 {
+        font-size: 0.8rem;
     }
-    .Hero-text-1{
-        width: 100vw;
-      
-        font-size: 1.5rem !important;
-    }
-    .Hero-text-2{
-        width: 100vw;
-        font-size: 1rem;
+    .Hero-text-2 {
+        font-size: 1.2rem;
     }
     .Hero-Section button {
-        font-size:0.5rem;
-    }
-    .smallaobut-header{
-        font-size: 2.3rem;
-    }
-    .smallabout-text{
-        font-size: 1.2rem;
+        font-size: 0.4rem;
     }
 }
 
-
-/* EdgeCases : 1236,428*/
-
+/* EdgeCases */
 @media(max-width:1236px){
-    .Hero-Section{
-        max-width: 1236px;
-    }
-    .Hero-text-1{
-        width: 100vw;
+    .Hero-text-1 {
         font-size: 3rem;
     }
-    .smallaobut-header{
-        font-size: 2.3rem;
-    }
-    .smallabout-text{
-        font-size: 1.2rem;
+    .Hero-text-2 {
+        font-size: 2rem;
     }
 }
-
 
 @media(max-width:393px){
-    .Hero-Section{
-        max-width: 393px;
-    }
-    .Hero-text p{
-        
+    .Hero-text-1 {
         font-size: 2rem;
     }
-    .smallaobut-header{
-        font-size: 2.3rem;
-    }
-    .smallabout-text{
-        font-size: 1.2rem;
-    }
-}
-@media (max-width:428px){
-    .Hero-Section{
-        max-width: 428px;
-    }
-    .Hero-text-1{
-        width: 100vw;
-        font-size: 2.5rem;
-    }
-    .Hero-text-2{
-        width: 100vw;
-        font-size: 2rem;
-    }
-    .smallaobut-header{
-        font-size: 2.3rem;
-    }
-    .smallabout-text{
-        font-size: 1.2rem;
-    }
-    
-}
-
-@media (max-width:390px) {
-    .Hero-Section{
-        max-width: 390px;
-    }
-    .Hero-text-1{
-        width: 100vw;
-        font-size: 2rem;
-    }
-    .Hero-text-2{
-        width: 100vw;
+    .Hero-text-2 {
         font-size: 1.5rem;
     }
-    .smallaobut-header{
-        font-size: 2.3rem;
+}
+
+@media(max-width:415px){
+    .Hero-text-1 {
+        font-size: 0.3rem;
     }
-    .smallabout-text{
-        font-size: 1.2rem;
+    .Hero-text-2 {
+        font-size: 1.5rem;
     }
-    
+}
+@media(max-width:425px){
+    .Hero-text-1 {
+        font-size: 0.3rem;
+    }
+    .Hero-text-2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:428px){
+    .Hero-text-1 {
+        font-size: 2.5rem;
+    }
+    .Hero-text-2 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:390px){
+    .Hero-text-1 {
+        font-size: 2rem;
+    }
+    .Hero-text-2 {
+        font-size: 1.5rem;
+    }
 }

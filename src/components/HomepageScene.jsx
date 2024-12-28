@@ -1,26 +1,32 @@
-import React, { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
-import * as THREE from 'three';
-
+import React, { useRef, Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { useGLTF, OrbitControls } from "@react-three/drei";
+import * as THREE from "three";
 
 // Component to load and display the GLB file with rotation
 const Scene = () => {
   const { scene } = useGLTF("/a_windy_day.glb");
   const modelRef = useRef();
 
-  // Automatic rotation
-  useFrame(() => {
-    if (modelRef.current) {
-      modelRef.current.rotation.y += 0.003; // Adjust speed of rotation
-    }
-  });
+  // Automatic rotation with optimized frame updates using requestAnimationFrame
+  React.useEffect(() => {
+    const rotateModel = () => {
+      if (modelRef.current) {
+        modelRef.current.rotation.y += 0.002; // Adjust speed of rotation
+      }
+      requestAnimationFrame(rotateModel); // Request the next frame
+    };
+
+    rotateModel(); // Start rotation loop
+
+    return () => {}; // Cleanup (no need for interval cleanup)
+  }, []);
 
   // Set emissive material properties to make the model brighter
   scene.traverse((child) => {
     if (child.isMesh) {
       child.material.emissive = new THREE.Color(1, 1, 1); // Set to white emissive
-      child.material.emissiveIntensity = 10.5; // Adjust emissive intensity
+      child.material.emissiveIntensity = 1.5; // Lower emissive intensity
     }
   });
 
@@ -41,15 +47,22 @@ const HomePageScene = () => {
     >
       <Canvas
         style={{ background: "transparent" }}
-        c  camera={{ position: [0, 0, 20], fov: 50 }} // Adjust camera position further back
+        camera={{ position: [0, 0, 10], fov: 50 }} // Adjust camera position further back
+        gl={{ antialias: true }} // Enable anti-aliasing for smoother edges
       >
-        {/* Add bright lights */}
-        <ambientLight intensity={100} /> {/* Increased ambient light intensity */}
-        <pointLight position={[0, 10, 10]} intensity={5} /> {/* Increased point light intensity */}
-        <directionalLight position={[10, 10, 50]} intensity={8} /> {/* Increased directional light intensity */}
-        <directionalLight position={[50, 50, 10]} intensity={15} /> {/* Increased directional light intensity */}
+        {/* Add optimized lighting */}
+        <ambientLight intensity={0.5} /> {/* Reduced ambient light intensity */}
+        <pointLight position={[0, 10, 10]} intensity={1.5} /> {/* Reduced point light intensity */}
+        <directionalLight position={[10, 10, 50]} intensity={2.5} /> {/* Reduced directional light intensity */}
+        <directionalLight position={[50, 50, 10]} intensity={3} /> {/* Reduced directional light intensity */}
+
+        {/* OrbitControls for user interaction */}
+        <OrbitControls enableZoom={false} enableRotate={true} enablePan={true} />
+
         {/* Render the rotating scene */}
-        <Scene />
+        <Suspense fallback={null}>
+          <Scene />
+        </Suspense>
       </Canvas>
     </div>
   );

@@ -34,7 +34,7 @@ function Navbar() {
          <Link to='/Contact'>   <li className="Menu-Item">Get a Quote</li></Link>
           </ul>
 
-          <div className="Icons-drawer flex flex-wrap justify-center items-center gap-5 text-white mt-36 mr-16">
+          {/* <div className="Icons-drawer flex flex-wrap justify-center items-center gap-5 text-white mt-36 mr-16">
             <a href='https://www.instagram.com/ktisislabs/' target='blank_' className="flex flex-col items-center hover:text-yellow-500 transition-all">
               <GrInstagram className='w-5 h-5 sm:w-8 sm:h-8' />
             </a>
@@ -47,7 +47,7 @@ function Navbar() {
             <a href='mailto:connect.ktisislabs@gmail.com' target='_blank' className="flex flex-col items-center hover:text-red-500 transition-all">
               <SiGmail className='w-6 h-6 sm:w-8 sm:h-8' />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     );
